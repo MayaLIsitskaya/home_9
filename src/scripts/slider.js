@@ -1,12 +1,9 @@
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
 
-const swiper = new Swiper('.swiper', '.pagination', {
+const swiper = new Swiper('.swiper', {
     navigation: {
         nextEl: '.slider__button-next',
         prevEl: '.slider__button-prev',
-    },
-    pagination: {
-        el: '.slider__pagination',
     },
     direction: 'horizontal',
     scrollbar: {
