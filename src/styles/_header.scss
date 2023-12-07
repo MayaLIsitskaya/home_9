@@ -3,9 +3,15 @@
   width: 100%;
   height: auto;
 
-  background-color: $primary-color;
+  margin: 0 auto;
 
+  background-color: $primary-color;
   z-index: 10;
+
+  &-block {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
 
   &__inner {
     @include flex();
