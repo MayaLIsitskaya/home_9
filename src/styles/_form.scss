@@ -1,0 +1,161 @@
+.flex {
+  &__row {
+    display: flex;
+    flex-direction: row;
+
+    padding-top: $p-1;
+
+    &-price {
+      @include flex();
+
+      position: relative;
+      padding-bottom: $p-1;
+
+      &-open {
+        position: absolute;
+        top: 0.8rem;
+        left: 6rem;
+
+        cursor: pointer;
+
+        width: 32px;
+        height: 26px;
+
+        background-image: url("../images/arrows/up.svg");
+        background-repeat: no-repeat;
+
+        &:hover {
+          background-image: url("../images/arrows/down.svg");
+        }
+      }
+    }
+
+    &-category {
+      @include flex();
+
+      position: relative;
+
+      &-open {
+        position: absolute;
+        top: 0.8rem;
+        left: 10rem;
+
+        cursor: pointer;
+
+        width: 32px;
+        height: 26px;
+
+        background-image: url("../images/arrows/up.svg");
+        background-repeat: no-repeat;
+
+        &:hover {
+          background-image: url("../images/arrows/down.svg");
+        }
+      }
+    }
+
+    &-country {
+      @include flex();
+
+      position: relative;
+
+      &-open {
+        position: absolute;
+        top: 0.8rem;
+        left: 7rem;
+
+        cursor: pointer;
+
+        width: 32px;
+        height: 26px;
+
+        background-image: url("../images/arrows/up.svg");
+        background-repeat: no-repeat;
+
+        &:hover {
+          background-image: url("../images/arrows/down.svg");
+        }
+      }
+    }
+
+    &-ingredients {
+      @include flex();
+
+      position: relative;
+
+      &-close {
+        position: absolute;
+        top: 0.8rem;
+        left: 7rem;
+
+        cursor: pointer;
+
+        width: 32px;
+        height: 26px;
+
+        background-image: url("../images/arrows/down.svg");
+        background-repeat: no-repeat;
+
+        &:hover {
+          background-image: url("../images/arrows/up.svg");
+        }
+      }
+    }
+
+    &-weight {
+      @include flex();
+
+      position: relative;
+
+      &-close {
+        position: absolute;
+        top: 0.8rem;
+        left: 7rem;
+
+        cursor: pointer;
+
+        width: 32px;
+        height: 26px;
+
+        background-image: url("../images/arrows/down.svg");
+        background-repeat: no-repeat;
+
+        &:hover {
+          background-image: url("../images/arrows/up.svg");
+        }
+      }
+    }
+
+  }
+}
+
+.price-written {
+  outline: none;
+
+  width: 78px;
+  height: 28px;
+  padding-left: $p-0-5;
+
+  font-size: $f-z-16;
+  border-radius: 5px;
+  border: 1px solid $color-border;
+
+  background-color: $color-white;
+}
+
+.price-written {
+  margin-left: $m-0-5;
+  margin-right: $m-0-5;
+}
+
+.country {
+  &__block {
+    margin-bottom: $m-3;
+  }
+}
+
+.ingredients {
+  &-filter {
+    margin-bottom: $m-1;
+  }
+}

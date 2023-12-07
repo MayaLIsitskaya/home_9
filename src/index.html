@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Catalog</title>
+
+    <link rel="shortcut icon" href="./images/icons/green-tea.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" >
+
+    <link rel="stylesheet" href="styles/CSS/main.css">
+</head>
+<body>
+<header class="header container">
+    <div class="block ">
+        <div class="header__inner">
+            <nav class="menu">
+                <ul class="menu__lists">
+                    <li><a href="#" class="menu__link">Доставка и оплата</a></li>
+                    <li><a href="#" class="menu__link">Отзывы</a></li>
+                    <li><a href="#" class="menu__link">О магазине</a></li>
+                    <li><a href="#" class="menu__link">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="actions">
+                <ul class="user-actions">
+                    <li>
+                        <a href="" class="user-actions__link">Вход</a> <span class="user-actions__span">|</span>
+                    </li>
+                    <li>
+                        <a href="" class="user-actions__link">Регистрация</a>
+                    </li>
+                    <li>
+                        <a href="#" class="user-actions__link">
+                            <img class="user-actions__cart" src="./images/icons/cart.svg" alt="cart" width="25"
+                                 height="18">
+                        </a>
+                        <span class="user-actions__num-items">3</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="main container">
+    <section class="section section-head">
+        <div class="section__row">
+            <div class="section__row_left">
+                <img class="section__block_logo" src="./images/icons/tea%20time%20green.svg"
+                     alt="logo"
+                     width="148"
+                     height="54">
+            </div>
+
+            <div class="section__row_right">
+                <div class="section__row_search">
+                    <input class="section__row_input" name="seacrh" type="search" placeholder="Поиск">
+                </div>
+
+                <div class="section__row_help">
+                        <img class="section__row_image"
+                             src="./images/icons/call-black.svg"
+                             alt="call"
+                             width="19"
+                             height="19">
+                        <a class="section__row_tel" href="tel: +375 (29) 767 45 65">+375 (29) 767 45 65</a>
+                    <span class="section__row_time"><br>Пн - пт с 9:00 до 19:00 <br> Сб-вс выходной</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section__scroll scroll">
+            <div class="scroll-wrapper">
+                <div class="scroll-slide">
+                    <a class="scroll-link" href="#">Чай</a>
+                    <a class="scroll-link" href="#">Кофе</a>
+                    <a class="scroll-link" href="#">Сладенькое</a>
+                    <a class="scroll-link" href="#">Атрибуты</a>
+                    <a class="scroll-link" href="#">Наборы</a>
+                    <a class="scroll-link" href="#">Акции</a>
+                </div>
+            </div>
+            <div class="scroll-scrollbar">
+                <button class="scroll-scrollbar__strip" type="button">
+                    <button class="scroll-scrollbar__button" type="button"></button>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-products">
+        <div class="section__block">
+            <div class="section__left">
+                <h2 class="title-product">Чай</h2>
+                <div class="section__left-filter">
+
+                    <div class="price-filter">
+                        <div class="price">
+                            <div class="flex__row">
+                                <div class="flex__row-price">
+                                    <h3 class="title-filter">Цена</h3>
+                                    <div class="flex__row-price-open"></div>
+                                </div>
+                            </div>
+                            <label for="from">
+                                <img class="flex__row-from" src="./images/от.svg" alt="from" width="19" height="13">
+                                <input class="price-written" id="from" name="price" placeholder="50">
+                            </label>
+                            <label for="to">
+                                <img class="flex__row-to" src="./images/до.svg" alt="to" width="19" height="13">
+                                <input class="price-written" id="to" name="price" placeholder="50">
+                            </label>
+                        </div>
+
+                        <div class="scroll-scrollbar">
+                            <div class="scroll-scrollbar__sorting">
+                                <button class="scroll-scrollbar__circle1" type="button"></button>
+                                <button class="scroll-scrollbar__circle2" type="button"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="types-filter">
+                        <div class="types__block">
+                            <div class="flex__row">
+                                <div class="flex__row-category">
+                                    <h3 class="title-filter">Категория</h3>
+                                    <div class="flex__row-category-open"></div>
+                                </div>
+                            </div>
+                            <div class="types-choice">
+                                <div class="flex__row">
+                                    <input class="types-choice__checkbox" id="black" name="tea" type="checkbox">
+                                    <label class="types-choice__label" for="black">Черный</label>
+                                </div>
+                                <div class="flex__row">
+                                    <input class="types-choice__checkbox" id="white" name="tea" type="checkbox">
+                                    <label class="types-choice__label" for="white">Белый</label>
+                                </div>
+                                <div class="flex__row">
+                                    <input class="types-choice__checkbox" id="green" name="tea" type="checkbox">
+                                    <label class="types-choice__label" for="green">Зеленый</label>
+                                </div>
+                                <div class="flex__row">
+                                    <input class="types-choice__checkbox" id="red" name="tea" type="checkbox">
+                                    <label class="types-choice__label" for="red">Красный</label>
+                                </div>
+                                <div class="flex__row">
+                                    <input class="types-choice__checkbox" id="yellow" name="tea" type="checkbox">
+                                    <label class="types-choice__label" for="yellow">Желтый</label>
+                                </div>
+                                <div class="flex__row">
+                                    <input class="types-choice__checkbox" id="fruit" name="tea" type="checkbox">
+                                    <label class="types-choice__label" for="fruit">Фруктовый</label>
+                                </div>
+                                <div class="flex__row">
+                                    <input class="types-choice__checkbox" id="herb" name="tea" type="checkbox">
+                                    <label class="types-choice__label" for="herb">Травяной</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="country-filter">
+                        <div class="country__block">
+                            <div class="flex__row">
+                                <div class="flex__row-country">
+                                    <h3 class="title-filter">Страна</h3>
+                                    <div class="flex__row-country-open"></div>
+                                </div>
+                            </div>
+                            <div class="types-choice">
+                                <div class="flex__row">
+                                    <input class="types-choice__checkbox" id="india" name="tea" type="checkbox">
+                                    <label class="types-choice__label" for="india">Индия</label>
+                                </div>
+                                <div class="flex__row">
+                                    <input class="types-choice__checkbox" id="china" name="tea" type="checkbox">
+                                    <label class="types-choice__label" for="china">Китай</label>
+                                </div>
+                                <div class="flex__row">
+                                    <input class="types-choice__checkbox" id="singapore" name="tea" type="checkbox">
+                                    <label class="types-choice__label" for="singapore">Сингапур</label>
+                                </div>
+                                <div class="flex__row">
+                                    <input class="types-choice__checkbox" id="brussels" name="tea" type="checkbox">
+                                    <label class="types-choice__label" for="brussels">Брюсель</label>
+                                </div>
+                                <div class="flex__row">
+                                    <input class="types-choice__checkbox" id="england" name="tea" type="checkbox">
+                                    <label class="types-choice__label" for="england">Англия</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ingredients-filter">
+                        <div class="flex__row">
+                            <div class="flex__row-ingredients">
+                                <h3 class="title-filter">Состав</h3>
+                                <div class="flex__row-ingredients-close"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weight-filter">
+                        <div class="flex__row">
+                            <div class="flex__row-weight">
+                                <h3 class="title-filter">По весу</h3>
+                                <div class="flex__row-weight-close"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section__right">
+                <ul class="section__lists">
+                    <li><a href="#" class="section__pages-link">Главная /</a></li>
+                    <li><a href="#" class="section__pages-link">Каталог /</a></li>
+                    <li><a href="#" class="section__pages-link">Чай</a></li>
+                </ul>
+
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product__tea">
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer1.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Юньнань Юнь</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__price"> 20 BYR</span>
+                                    </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer2.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Бай Му Дань</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__old-price"> 20 BYR</span>
+                                        <span class="product__new-price"> 15 BYR</span>
+                                    </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer3.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Лушань Юнь</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__price"> 25 BYR</span>
+                                    </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer4.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Шоу Мэй </h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__price"> 15 BYR</span>
+                                    </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer1.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Юньнань Юнь</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__price"> 20 BYR</span>
+                                    </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer2.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Бай Му Дань</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый <br> вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__old-price"> 20 BYR</span>
+                                        <span class="product__new-price"> 15 BYR</span>
+                                        </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer1.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Юньнань Юнь</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__price"> 20 BYR</span>
+                                    </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer4.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Бай Му Дань</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__old-price"> 20 BYR</span>
+                                        <span class="product__new-price"> 15 BYR</span>
+                                    </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer3.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Лушань Юнь</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight"> 100 гр. /
+                                        <span class="product__price"> 25 BYR</span>
+                                     </span>
+                                    <button class="btn"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="product__tea">
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer1.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Юньнань Юнь</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__price"> 20 BYR</span>
+                                    </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer2.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Бай Му Дань</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__old-price"> 20 BYR</span>
+                                        <span class="product__new-price"> 15 BYR</span>
+                                    </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer3.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Лушань Юнь</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__price"> 25 BYR</span>
+                                    </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer4.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Шоу Мэй </h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__price"> 15 BYR</span>
+                                    </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer1.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Юньнань Юнь</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__price"> 20 BYR</span>
+                                    </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer2.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Бай Му Дань</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый <br> вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__old-price"> 20 BYR</span>
+                                        <span class="product__new-price"> 15 BYR</span>
+                                        </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer1.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Юньнань Юнь</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__price"> 20 BYR</span>
+                                    </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer4.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Бай Му Дань</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__old-price"> 20 BYR</span>
+                                        <span class="product__new-price"> 15 BYR</span>
+                                    </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer3.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Лушань Юнь</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight"> 100 гр. /
+                                        <span class="product__price"> 25 BYR</span>
+                                     </span>
+                                    <button class="btn"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="product__tea">
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer1.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Юньнань Юнь</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__price"> 20 BYR</span>
+                                    </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer2.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Бай Му Дань</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__old-price"> 20 BYR</span>
+                                        <span class="product__new-price"> 15 BYR</span>
+                                    </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer3.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Лушань Юнь</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__price"> 25 BYR</span>
+                                    </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer4.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Шоу Мэй </h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__price"> 15 BYR</span>
+                                    </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer1.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Юньнань Юнь</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__price"> 20 BYR</span>
+                                    </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer2.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Бай Му Дань</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый <br> вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__old-price"> 20 BYR</span>
+                                        <span class="product__new-price"> 15 BYR</span>
+                                        </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer1.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Юньнань Юнь</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__price"> 20 BYR</span>
+                                    </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer4.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Бай Му Дань</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__old-price"> 20 BYR</span>
+                                        <span class="product__new-price"> 15 BYR</span>
+                                    </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer3.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Лушань Юнь</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight"> 100 гр. /
+                                        <span class="product__price"> 25 BYR</span>
+                                     </span>
+                                    <button class="btn"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="product__tea">
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer1.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Юньнань Юнь</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__price"> 20 BYR</span>
+                                    </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer2.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Бай Му Дань</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__old-price"> 20 BYR</span>
+                                        <span class="product__new-price"> 15 BYR</span>
+                                    </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer3.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Лушань Юнь</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__price"> 25 BYR</span>
+                                    </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer4.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Шоу Мэй </h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__price"> 15 BYR</span>
+                                    </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer1.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Юньнань Юнь</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__price"> 20 BYR</span>
+                                    </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer2.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Бай Му Дань</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый <br> вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__old-price"> 20 BYR</span>
+                                        <span class="product__new-price"> 15 BYR</span>
+                                        </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer1.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Юньнань Юнь</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__price"> 20 BYR</span>
+                                    </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer4.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Бай Му Дань</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight">100 гр. /
+                                        <span class="product__old-price"> 20 BYR</span>
+                                        <span class="product__new-price"> 15 BYR</span>
+                                    </span>
+                                    <button class="btn"></button>
+                                </div>
+
+                                <div class="product__item">
+                                    <div class="product__scale">
+                                        <div class="product__rate">
+                                            <img class="product__icon" src="./images/icons/Star%201.svg" alt="star"
+                                                 width="26"
+                                                 height="26">
+                                            <span class="product__num">4.7</span>
+                                        </div>
+                                        <div class="product__like"></div>
+                                    </div>
+                                    <img class="product__image" src="./images/products/offer3.svg" alt="tea" width="160"
+                                         height="150">
+                                    <h3 class="product__title">Лушань Юнь</h3>
+                                    <h4 class="product__subtitle">Белый чай</h4>
+                                    <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет
+                                        сладковатый<br>вкус с легкой кислинкой.
+                                    </p>
+                                    <span class="product__weight"> 100 гр. /
+                                        <span class="product__price"> 25 BYR</span>
+                                     </span>
+                                    <button class="btn"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider pagination">
+                        <div class="slider__circle">
+                            <div class="slider__button-prev ">
+                                <img src="./images/icons/button-prev.svg" alt="prev" width="9" height="16">
+                            </div>
+                        </div>
+                        <div class="slider__pagination">
+                            <ul class="slider__pagination_lists">
+                                <li><a class="slider__pagination_link" href="#">1</a></li>
+                                <li><a class="slider__pagination_link" href="#">2</a></li>
+                                <li><a class="slider__pagination_link" href="#">3</a></li>
+                                <li><a class="slider__pagination_link" href="#">4</a></li>
+                                <li><a class="slider__pagination_link" href="#">...</a></li>
+                            </ul>
+                        </div>
+                        <div class="slider__circle">
+                            <div class="slider__button-next">
+                                <img src="./images/icons/button-next.svg" alt="next" width="9" height="16">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-offers">
+        <h2 class="title">Акции</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="product">
+                        <div class="product__item">
+                            <div class="product__scale">
+                                <div class="product__rate">
+                                    <img class="product__icon" src="./images/icons/Star%201.svg" alt="star" width="26"
+                                         height="26">
+                                    <span class="product__num">4.7</span>
+                                </div>
+                                <div class="product__like"></div>
+                            </div>
+                            <img class="product__image" src="./images/products/offer1.svg" alt="tea" width="160"
+                                 height="150">
+                            <h3 class="product__title">Лю Ань Хэй Ча</h3>
+                            <h4 class="product__subtitle">Белый чай</h4>
+                            <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет сладковатый
+                                <br>вкус с легкой кислинкой.
+                            </p>
+                            <span class="product__weight">100 гр. /
+                                <span class="product__old-price"> 20 BYR</span>
+                                <span class="product__new-price"> 17 BYR</span>
+                            </span>
+                            <button class="btn"></button>
+                        </div>
+                        <div class="product__item">
+                            <div class="product__scale">
+                                <div class="product__rate">
+                                    <img class="product__icon" src="./images/icons/Star%201.svg" alt="star" width="26"
+                                         height="26">
+                                    <span class="product__num">4.7</span>
+                                </div>
+
+                                <div class="product__like"></div>
+                            </div>
+                            <img class="product__image" src="./images/products/offer2.svg" alt="tea" width="160"
+                                 height="150">
+                            <h3 class="product__title">Лушань Юнь</h3>
+                            <h4 class="product__subtitle">Белый чай</h4>
+                            <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет сладковатый
+                                <br>вкус с легкой кислинкой.
+                            </p>
+                            <span class="product__weight">100 гр. /
+                                <span class="product__old-price"> 20 BYR</span>
+                                <span class="product__new-price"> 14 BYR</span>
+                            </span>
+                            <button class="btn"></button>
+                        </div>
+                        <div class="product__item">
+                            <div class="product__scale">
+                                <div class="product__rate">
+                                    <img class="product__icon" src="./images/icons/Star%201.svg" alt="star" width="26"
+                                         height="26">
+                                    <span class="product__num">4.7</span>
+                                </div>
+                                <div class="product__like"></div>
+                            </div>
+                            <img class="product__image" src="./images/products/offer3.svg" alt="tea" width="160"
+                                 height="150">
+                            <h3 class="product__title">Шоу Мэй</h3>
+                            <h4 class="product__subtitle">Белый чай</h4>
+                            <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет сладковатый
+                                <br>вкус с легкой кислинкой.</p>
+                            <span class="product__weight">100 гр. /
+                                <span class="product__old-price"> 20 BYR</span>
+                                <span class="product__new-price"> 18 BYR</span>
+                            </span>
+                            <button class="btn"></button>
+                        </div>
+                        <div class="product__item">
+                            <div class="product__scale">
+                                <div class="product__rate">
+                                    <img class="product__icon" src="./images/icons/Star%201.svg" alt="star" width="26"
+                                         height="26">
+                                    <span class="product__num">4.7</span>
+                                </div>
+                                <div class="product__like"></div>
+                            </div>
+                            <img class="product__image" src="./images/products/offer4.svg" alt="tea" width="160"
+                                 height="150">
+                            <h3 class="product__title">Юньнань Юнь</h3>
+                            <h4 class="product__subtitle">Белый чай</h4>
+                            <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет сладковатый
+                                <br>вкус с легкой кислинкой.</p>
+                            <span class="product__weight">100 гр. /
+                                <span class="product__price"> 20 BYR</span>
+                                <span class="product__new-price"> 15 BYR</span>
+                            </span>
+                            <button class="btn"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product">
+                        <div class="product__item">
+                            <div class="product__scale">
+                                <div class="product__rate">
+                                    <img class="product__icon" src="./images/icons/Star%201.svg" alt="star" width="26"
+                                         height="26">
+                                    <span class="product__num">4.7</span>
+                                </div>
+                                <div class="product__like"></div>
+                            </div>
+                            <img class="product__image" src="./images/products/offer1.svg" alt="tea" width="160"
+                                 height="150">
+                            <h3 class="product__title">Лю Ань Хэй Ча</h3>
+                            <h4 class="product__subtitle">Белый чай</h4>
+                            <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет сладковатый
+                                <br>
+                                вкус
+                                с легкой кислинкой.</p>
+                            <span class="product__weight">100 гр. / <span class="product__old-price"> 20 BYR</span> <span
+                                    class="product__new-price"> 17 BYR</span></span>
+                            <button class="btn"></button>
+                        </div>
+                        <div class="product__item">
+                            <div class="product__scale">
+                                <div class="product__rate">
+                                    <img class="product__icon" src="./images/icons/Star%201.svg" alt="star" width="26"
+                                         height="26">
+                                    <span class="product__num">4.7</span>
+                                </div>
+
+                                <div class="product__like"></div>
+                            </div>
+                            <img class="product__image" src="./images/products/offer2.svg" alt="tea" width="160"
+                                 height="150">
+                            <h3 class="product__title">Лушань Юнь</h3>
+                            <h4 class="product__subtitle">Белый чай</h4>
+                            <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет сладковатый
+                                <br>
+                                вкус
+                                с легкой кислинкой.</p>
+                            <span class="product__weight">100 гр. / <span class="product__old-price"> 20 BYR</span> <span
+                                    class="product__new-price"> 14 BYR</span></span>
+                            <button class="btn"></button>
+                        </div>
+                        <div class="product__item">
+                            <div class="product__scale">
+                                <div class="product__rate">
+                                    <img class="product__icon" src="./images/icons/Star%201.svg" alt="star" width="26"
+                                         height="26">
+                                    <span class="product__num">4.7</span>
+                                </div>
+                                <div class="product__like"></div>
+                            </div>
+                            <img class="product__image" src="./images/products/offer3.svg" alt="tea" width="160"
+                                 height="150">
+                            <h3 class="product__title">Шоу Мэ1 </h3>
+                            <h4 class="product__subtitle">Белый чай</h4>
+                            <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет сладковатый
+                                <br>
+                                вкус
+                                с легкой кислинкой.</p>
+                            <span class="product__weight">100 гр. /
+                                <span class="product__old-price"> 20 BYR</span>
+                                <span class="product__new-price"> 18 BYR</span>
+                            </span>
+                            <button class="btn"></button>
+                        </div>
+                        <div class="product__item">
+                            <div class="product__scale">
+                                <div class="product__rate">
+                                    <img class="product__icon" src="./images/icons/Star%201.svg" alt="star" width="26"
+                                         height="26">
+                                    <span class="product__num">4.7</span>
+                                </div>
+                                <div class="product__like"></div>
+                            </div>
+                            <img class="product__image" src="./images/products/offer4.svg" alt="tea" width="160"
+                                 height="150">
+                            <h3 class="product__title">Юньнань Юнь</h3>
+                            <h4 class="product__subtitle">Белый чай</h4>
+                            <p class="product__description">Очень легкий чай с тонким <br> ароматом, имеет сладковатый
+                                <br>
+                                вкус
+                                с легкой кислинкой.</p>
+                            <span class="product__weight">100 гр. /
+                                <span class="product__price"> 20 BYR</span>
+                                <span class="product__new-price"> 15 BYR</span>
+                            </span>
+                            <button class="btn"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider">
+                <div class="slider__circle">
+                    <div class="slider__button-prev">
+                        <img src="./images/icons/button-prev.svg" alt="prev" width="9" height="16">
+                    </div>
+                </div>
+                <div class="slider__circle">
+                    <div class="slider__button-next">
+                        <img src="./images/icons/button-next.svg" alt="next"  width="9" height="16">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer container">
+    <div class="block">
+        <div class="footer__row">
+            <div class="footer__left">
+                <a href="#" class="logo">
+                    <img src="./images/Union.svg" alt="logo" width="148" height="54">
+                </a>
+                <nav class="soc__links">
+                    <ul class="soc__lists">
+                        <li>
+                            <a href="#!" class="soc__link">
+                                <img class="soc__img" src="./images/icons/socials/001-instagram.svg" alt="instagram"
+                                 width="40" height="40">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="soc__link">
+                                <img class="soc__img" src="./images/icons/socials/002-twitter.svg" alt="twitter" width="40"
+                                 height="40">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="soc__link">
+                                <img class="soc__img" src="./images/icons/socials/003-youtube.svg" alt="youtube" width="40"
+                                 height="40">
+                             </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="so__link">
+                                <img class="soc__img" src="./images/icons/socials/004-facebook.svg" alt="facebook" width="40"
+                                 height="40">
+                             </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer__right">
+                <nav class="info">
+                    <ul class="info__lists">
+                        <li class="info__white">Информация</li>
+                        <li>
+                            <a href="#!" class="info__link">Доставка и оплата</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="info__link">Отзывы</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="info__link">О магазине</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="info__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="category">
+                    <ul class="category__lists">
+                        <li>
+                            <span class="info__white">Категории</span>
+                        </li>
+                        <li>
+                            <a href="#!" class="category__link">Чай</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="category__link">Кофе</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="category__link">Сладенькое</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="category__link">Атрибуты</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="category__link">Наборы</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="category__link">Акции</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="contact">
+                    <ul class="contact__lists">
+                        <li>
+                            <img class="contact__image" src="./images/icons/call.svg" alt="call" width="19" height="19">
+                            <a class="contact__num" href="tel: +375 (29) 767 45 65">+375 (29) 767 45 65</a>
+                        </li>
+                        <li class="contact__time">Пн - пт с 9:00 до 19:00 <br> Сб-вс выходной</li>
+                        <li>
+                            <img class="contact__image" src="./images/icons/point.svg" alt="call" width="19"
+                                 height="19">
+                            <a class="contact__address" href="#">Адрес</a>
+                        </li>
+                        <li class="contact__location">Дмитровское ш., <br> д. 125, стр. 1, офис 5</span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="module" src="./scripts/slider.js"></script>
+</body>
+</html>

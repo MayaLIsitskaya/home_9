@@ -1,0 +1,58 @@
+.types {
+  &__block {
+    margin-bottom: $m-3;
+  }
+
+  &-choice {
+    position: relative;
+
+    font-size: $f-z-18;
+    font-weight: $f-w-400;
+
+    color: $color-info;
+
+    &__checkbox {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+    }
+
+    &__checkbox + label {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    &__checkbox + label::before {
+      content: '';
+      display: inline-block;
+
+      margin-right: $m-1;
+
+      width: 20px;
+      height: 20px;
+
+      border: 1px solid $color-border;
+      border-radius: 3px;
+
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 50% 50%;
+    }
+
+    &__checkbox:checked + label::before {
+      border-color: $color-menu;
+
+      background-color: $primary-color;
+      background-image: url("../images/arrows/tick.svg");
+    }
+  }
+}
+
+.types-choice {
+  display: flex;
+  flex-direction: column;
+}
+
+.types-choice__checkbox::after {
+  color: $primary-color;
+}

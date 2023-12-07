@@ -1,0 +1,28 @@
+.title {
+  padding-bottom: $p-3;
+  text-align: center;
+
+  font-size: $f-z-33;
+  font-weight: $f-w-700;
+
+  color: $color-title;
+
+  &-product {
+    margin-top: $p-2;
+    text-align: left;
+
+    font-size: $f-z-33;
+    font-weight: $f-w-700;
+
+    color: $color-title;
+  }
+
+  &-filter {
+    font-size: $f-z-21;
+    font-weight: $f-w-600;
+
+    color: $color-info;
+    margin-bottom: $m-1-5;
+
+  }
+}

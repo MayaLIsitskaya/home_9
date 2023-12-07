@@ -1,0 +1,168 @@
+.btn {
+  @include transition();
+
+  display: inline-block;
+  width: 239px;
+  height: 53px;
+  padding: $p-1;
+
+  text-decoration: none;
+  line-height: $l-h;
+
+
+  background-color: $primary-color;
+  border: none;
+  border-radius: 42px;
+  color: $color-white;
+
+  text-align: center;
+  font-weight: $f-w-400;
+  font-size: $f-z-18;
+
+  margin-top: $p-1-75;
+  margin-bottom: $p-1-75;
+  margin-left: 0.8rem;
+
+  cursor: pointer;
+
+  &:hover {
+   opacity: 0.9;
+  }
+
+  &::before {
+    content: "В корзину";
+  }
+
+  &:hover::before {
+    content: "Убрать из корзины";
+  }
+}
+
+.scroll-scrollbar {
+  position: relative;
+
+    &__strip {
+      margin-top: $m-6;
+
+      background-color: $color-scrollbar;
+
+      border-radius: 26px;
+      border: none;
+
+      width: 723px;
+      height: 18.75px ;
+
+      z-index: 5;
+    }
+
+  &__button {
+    position: absolute;
+    left: 0;
+
+    margin-top: $m-6;
+
+    z-index: 10;
+
+    border: none;
+    border-radius: 26px;
+    width: 41px;
+    height: 18.75px;
+
+    background-color: $primary-color;
+
+    &:hover {
+      cursor: pointer;
+
+      opacity: 0.9;
+    }
+  }
+
+  &__sorting {
+    position: relative;
+
+    margin-top: $m-4;
+    margin-bottom: $m-3;
+
+    background-color: $color-menu;
+
+    border: none;
+
+    width: 259px;
+    height: 3px ;
+
+    z-index: 5;
+  }
+
+  &__circle1 {
+    cursor: pointer;
+
+    position: absolute;
+    top: -0.5rem;
+    left: 2rem;
+
+    height: 20px;
+    width: 20px;
+
+    border-radius: 50%;
+    border: none;
+
+    background-color: $primary-color;
+
+    z-index: 10;
+
+    &:hover {
+      box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &__circle2 {
+    cursor: pointer;
+
+    position: absolute;
+    top: -0.5rem;
+    left: 15rem;
+
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: none;
+    z-index: 10;
+  }
+}
+
+.button {
+  &__moving {
+    position: absolute;
+    left: 0;
+
+    width: 259px;
+    height: 3px;
+
+    border: none;
+
+
+    z-index: 5;
+
+    &-green {
+      width: 19px;
+      height: 19px;
+
+      border-radius: 50%;
+
+      background-color: $primary-color;
+
+      &:hover {
+        box-shadow: (2px 2px 7px rgba(0, 0, 0, 0.25));;
+      }
+    }
+
+    &-grey {
+      width: 19px;
+      height: 19px;
+
+      border-radius: 50%;
+
+      background-color: $color-info;
+    }
+  }
+}

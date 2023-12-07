@@ -1,0 +1,17 @@
+.header {
+  position: fixed;
+  width: 100%;
+  height: auto;
+
+  background-color: $primary-color;
+
+  z-index: 10;
+
+  &__inner {
+    @include flex();
+    position: relative;
+
+    padding-top: $p-2;
+    padding-bottom: $p-2;
+  }
+}

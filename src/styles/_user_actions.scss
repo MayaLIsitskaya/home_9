@@ -1,0 +1,56 @@
+.actions {
+  position: absolute;
+  right: 1rem;
+}
+
+.user-actions {
+  @include flex();
+  gap: $p-1;
+
+  position: relative;
+
+
+  &__link {
+
+    @include transition();
+    color: $color-white;
+
+    font-size: $f-z-16;
+    font-weight: 600;
+
+    &:hover {
+      cursor: pointer;
+
+      color: $color-text;
+    }
+  }
+
+  &__span {
+    color: $color-white;
+    padding-left: $p-1;
+  }
+
+  &__num-items {
+    position: absolute;
+    left: 15.3rem;
+
+    font-size: $f-z-11;
+    font-weight: 400;
+    text-align: center;
+
+    background-color: $color-red;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    color: $color-white;
+  }
+
+  &__cart {
+    @include transition();
+    cursor: pointer;
+
+    &:hover {
+      @include transform();
+    }
+  }
+}

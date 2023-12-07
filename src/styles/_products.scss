@@ -1,0 +1,144 @@
+.product {
+  @include flex();
+  gap: 1rem;
+
+  &__tea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+  }
+
+  &__item {
+    background-color: $color-white;
+    border-radius: 30px;
+
+    padding-top: $p-1-75;
+    padding-right: $p-1;
+    padding-left: $p-1;
+
+    position: relative;
+    height: auto;
+    width: 285px;
+
+    &:hover {
+      border-radius: 30px;
+      box-shadow: 10px 10px 20px 0px rgba(245, 245, 245, 0.70), -10px -10px 20px 0px rgba(245, 245, 245, 0.70);
+    }
+  }
+
+  &__scale {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__icon {
+    cursor: pointer;
+
+    &:hover {
+      @include transform();
+    }
+  }
+
+  &__num {
+    position: absolute;
+    top: 2rem;
+    left: 3.5rem;
+
+
+    font-size: $f-z-18;
+    font-weight: $f-w-400;
+    line-height: $l-h;
+
+    color: $color-text;
+  }
+
+  &__like {
+    margin-top: 0.1rem;
+
+    cursor: pointer;
+
+    width: 32px;
+    height: 26px;
+
+    background-image: url("../images/icons/like.svg");
+    background-repeat: no-repeat;
+
+     &:hover {
+      background-image: url("../images/icons/red heart.svg");
+    }
+  }
+
+  &__image {
+    @include transition();
+
+    display: block;
+    margin: $m-3 auto;
+
+    &:hover {
+      @include transform();
+    }
+
+  }
+
+  &__title {
+    color: $color-title;
+
+    font-size: $f-z-21;
+    font-weight: $f-w-600;
+
+    margin-bottom: $m-1;
+  }
+
+  &__subtitle {
+    color: $color-text;
+
+    font-size: $f-z-16;
+    font-weight: $f-w-600;
+
+    padding-bottom: $p-0-5;
+  }
+
+  &__description {
+    color: $color-text;
+
+    font-size: $f-z-14;
+    font-weight: $f-w-400;
+
+    padding-bottom: $p-1-75;
+  }
+
+  &__weight {
+    color: $color-title;
+
+    font-size: $f-z-18;
+    font-weight: $f-w-400;
+
+    padding-bottom: $p-1-75;
+  }
+
+  &__price {
+    color: $color-title;
+
+    font-size: $f-z-21;
+    font-weight: $f-w-600;
+  }
+
+  &__old-price {
+    color: $color-text;
+
+    font-size: $f-z-18;
+    font-weight: $f-w-400;
+    text-decoration: line-through;
+  }
+
+  &__new-price {
+    color: $color-red;
+
+    font-size: $f-z-21;
+    font-weight: $f-w-600;
+  }
+}
+

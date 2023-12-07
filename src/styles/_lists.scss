@@ -1,0 +1,141 @@
+.info {
+  line-height: 30.183px;
+
+  &__lists {
+    @include flex-column();
+    gap: $p-1;
+  }
+
+  &__link {
+    @include transition();
+
+    &:hover {
+      cursor: pointer;
+
+      color: $color-text;
+    }
+  }
+
+  &__white {
+    color: $color-white;
+  }
+}
+
+.category {
+  line-height: 30.183px;
+
+  &__lists {
+    @include flex-column();
+    gap: $p-1;
+
+    padding-top: 5.6rem;
+    padding-right: $p-5;
+  }
+  &__link {
+    @include transition();
+
+    &:hover {
+      cursor: pointer;
+
+      color: $color-text;
+    }
+  }
+}
+
+.contact {
+  &__num {
+    @include transition();
+    padding-left: $p-1;
+
+    color: $color-white;
+
+    line-height: 30.183px;
+
+    &:hover{
+      cursor: pointer;
+
+      color: $color-text;
+    }
+  }
+
+  &__address {
+    @include transition();
+    padding-left: $p-1;
+
+    color: $color-white;
+    line-height: 30.183px;
+
+    &:hover{
+      cursor: pointer;
+
+      color: $color-text;
+    }
+  }
+
+  &__time {
+    padding-bottom: $p-1;
+    color: $color-menu;
+    line-height: 30.183px;
+  }
+
+  &__location{
+    padding-bottom: $p-1;
+    color: $color-menu;
+    line-height: 30.183px;
+  }
+}
+
+.section {
+  &__lists {
+    @include flex();
+    justify-content: left;
+    gap: 0.5rem;
+    color: #A5A5A5;
+
+    font-size: $f-z-16;
+    font-weight: $f-w-400;
+
+    margin-top: $m-4;
+    margin-bottom: $m-1;
+  }
+
+  &__pages {
+    &-link:hover {
+      color: $color-info;
+    }
+  }
+}
+
+.slider__pagination {
+  font-size: $f-z-21;
+  font-weight: $f-w-400;
+
+  &_lists {
+    @include flex();
+    @include transition();
+
+    gap: 1rem;
+  }
+
+  &_link:hover {
+    color:$color-info;
+  }
+}
+
+.soc {
+  &__lists {
+    @include flex();
+    width: 203px;
+
+    gap: $p-1-75;
+  }
+
+  &__img {
+    @include transition();
+    cursor: pointer;
+
+    &:hover {
+      @include transform();
+    }
+  }
+}

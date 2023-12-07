@@ -1,0 +1,26 @@
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin transition {
+  transition: all 0.5s;
+}
+
+@mixin transform {
+  transform: scale(1.5);
+}
+
+@mixin container {
+  min-width: 1200px;
+  margin: 0 auto;
+
+  padding-left: 100px;
+  padding-right: 100px;
+}

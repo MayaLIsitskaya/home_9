@@ -1,0 +1,20 @@
+.menu {
+  @include flex();
+
+  &__lists {
+    @include flex();
+    gap:$p-2;
+
+    position: absolute;
+  }
+
+  &__link {
+    @include transition();
+
+    &:hover {
+      cursor: pointer;
+
+      color: $color-text;
+    }
+  }
+}
